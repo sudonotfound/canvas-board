@@ -1,0 +1,5 @@
+# 書き出した HTML と、自分の実データは入れない
+*.html
+/board.json
+__pycache__/
+.DS_Store

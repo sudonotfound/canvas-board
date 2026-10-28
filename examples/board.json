@@ -1,0 +1,37 @@
+{
+  "title": "サンプルボード",
+  "updated": "2026-10-28",
+  "sections": [
+    {"id": "tasks", "name": "タスク", "note": "列の中は上ほど優先。今日は最大3つ"},
+    {"id": "inbox", "name": "受付", "parent": "tasks"},
+    {"id": "week", "name": "今週", "parent": "tasks"},
+    {"id": "today", "name": "今日", "parent": "tasks"},
+    {"id": "waiting", "name": "確認待ち", "parent": "tasks"},
+    {"id": "done", "name": "完了", "parent": "tasks"},
+    {"id": "wants", "name": "やりたいこと"},
+    {"id": "automation", "name": "自動化", "parent": "wants"},
+    {"id": "templates", "name": "定型文をまとめたい", "parent": "automation"},
+    {"id": "learning", "name": "学びたいこと", "parent": "wants"},
+    {"id": "later", "name": "あとで整理", "note": "置き場所が決まっていないもの"},
+    {"id": "tools", "name": "気になるツール", "parent": "later"}
+  ],
+  "items": [
+    {"id": "t1", "section": "inbox", "text": "勉強会の資料を読む", "color": "yellow"},
+    {"id": "t2", "section": "week", "text": "週次レビュー", "color": "green"},
+    {"id": "t3", "section": "week", "text": "ブログ記事の下書き", "color": "green", "project": "blog", "due": "2026-10-31"},
+    {"id": "t4", "section": "today", "text": "API の設計レビューに回答する", "color": "green", "project": "sample-app", "goal": "コメントにすべて返信している"},
+    {"id": "t5", "section": "today", "text": "定例の議題を準備する", "color": "blue"},
+    {"id": "t6", "section": "waiting", "text": "PR #12 のレビュー待ち", "color": "orange", "project": "sample-app"},
+    {"id": "t7", "section": "done", "text": "開発環境のセットアップ", "color": "gray"},
+    {"id": "w1", "section": "templates", "text": "お礼の連絡", "color": "gray"},
+    {"id": "w2", "section": "templates", "text": "日程調整の連絡", "color": "gray"},
+    {"id": "w3", "section": "templates", "text": "障害報告", "color": "gray"},
+    {"id": "w4", "section": "automation", "text": "毎朝の予定まとめを自動で作る", "color": "purple"},
+    {"id": "w5", "section": "learning", "text": "Rust の入門書を1冊読む", "color": "pink"},
+    {"id": "w6", "section": "wants", "text": "長いメモの例です。付箋は幅がそろい、5行を超える文は途中で切れます。\n全文は付箋をクリックすると右側のパネルに表示されます。\nここに会議のメモや下書きなど、長めの文章を置いておけます。\nたとえば 4 行目。\nたとえば 5 行目。\nたとえば 6 行目（ここは付箋には出ません）。", "color": "red"},
+    {"id": "l1", "section": "tools", "type": "link", "title": "Python", "desc": "プログラミング言語 Python の公式サイト", "site": "python.org", "url": "https://www.python.org/"},
+    {"id": "l2", "section": "tools", "type": "link", "title": "MDN Web Docs", "desc": "HTML・CSS・JavaScript のリファレンス", "site": "developer.mozilla.org", "url": "https://developer.mozilla.org/"},
+    {"id": "n1", "section": "later", "text": "あとで決めるメモ", "color": "gray"},
+    {"id": "p1", "section": "later", "type": "priority"}
+  ]
+}
